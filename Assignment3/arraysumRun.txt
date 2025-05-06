@@ -1,0 +1,20 @@
+1.
+cd ~/Downloads
+unzip mpj-v0_44.zip -d ~/mpj
+
+2.
+nano ~/.bashrc
+
+3.
+
+export MPJ_HOME=$HOME/mpj/mpj-v0_44
+export PATH=$PATH:$MPJ_HOME/bin
+(ctrl o enter ctrlx)
+4.
+source ~/.bashrc
+
+5.
+javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
+mpjrun.sh -np 4 -cp . ArrSum
+
+
